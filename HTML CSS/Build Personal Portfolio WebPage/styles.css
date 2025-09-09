@@ -1,0 +1,92 @@
+/* Reset margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar fixed on top */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  gap: 20px;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section fills viewport height */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #76c9ff, #f7ffde);
+  padding-top: 60px; /* To avoid navbar overlap */
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  color: #222;
+}
+
+/* Projects Section styling */
+#projects {
+  padding: 80px 20px 40px; /* Add padding for spacing */
+  background-color: #fafafa;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.project-tile {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #eee;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-tile a {
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-tile a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #welcome-section h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+  #projects h2 {
+    font-size: 2rem;
+  }
+}

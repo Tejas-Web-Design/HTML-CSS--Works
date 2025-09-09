@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <main>
+            <h1>CatPhotoApp</h1>
+            <section>
+                <h2>Cat Photos</h2>
+                <!--Add link to cat photos-->
+                <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">cute cats</a> online! </p>
+                <p>See moren<a href="https://freecatphotoapp.com">Cat Photos</a> in our gallery.</p>
+                <a href="https://freecatphotoapp.com">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.rM81T2vECiRhkckDanbD9QHaEo&pid=Api&P=0&h=180" alt="A cute orange cat lying on it's back"/>
+                </a>
+            </section>
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things Cat Love:</h3>
+                <ul>
+                    <p>Three things cat love:</p>
+                    <li>Catnip</li>
+                    <li>Laser Pointers</li>
+                    <li>Lasagna</li>
+                </ul>
+                <figure>
+                    <img src="http://galbanicheese.com/wp-content/uploads/2016/10/Cheese-Lasagna-72DPI1-e1476892466909-1024x843.jpg" alt="A slice of lasagna on a plate" width="300" height="300"/>
+                    <figcaption>Cats <em>Love</em> Lasagna.</figcaption>
+                </figure>
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>Flea Treatement</li>
+                    <li>Thunder</li>
+                    <li>Other cats</li>
+                </ol>
+                <figure>
+                    <img src="http://3.bp.blogspot.com/-dui-f0hQUHE/U0Qs5dOcWII/AAAAAAAACpg/S1lb9AnsMU4/s1600/loveable-cat-wallpaper-free.jpg" alt="Five cats looking around a field" width="300" height="300"/>
+                    <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Cat Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                        <input type="text" name="catphotourl" placeholder="Cat photo URL" required/>
+                    <fieldset>
+                        <legend>Is your cat an Indoor or Outdoor cat? </legend>
+                        <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+                        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's Personality? </legend>
+                        <label for="loving"><input type="checkbox" id="loving" name="personality">Loving</label>
+                        <label for="lazy"><input type="checkbox" id="lazy" name="personality" value="lazy">Lazy</label>
+                        <label for="energetic"><input type="checkbox" id="energetic" name="personality" value="energetic">Energetic</label>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>No Copyright-<a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </body>
+</html>
